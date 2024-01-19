@@ -45,7 +45,7 @@ body {
 .tooltip .tooltiptext {
   visibility: hidden;
   font-size: 15px;
-  width: 70px;
+  width: 50px;
   margin-left: 5px;
   background-color: var(--bg);
   color: #fff;
@@ -54,6 +54,8 @@ body {
   border-radius: 6px;
   position: absolute;
   z-index: 1;
+}.tooltip .tooltiptext.aa {
+  width: 200px;
 }
 .tooltip .tooltiptext::after {
   content: " ";
