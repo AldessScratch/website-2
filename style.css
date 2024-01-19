@@ -8,8 +8,34 @@
     scroll-behavior: smooth;
 }
 body {
-    background-image: url('./img/bg.png');
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url('./img/bg.png');
+  background-size: cover;
+  background-position: center;
+}
 
+
+    :root {
+      --bg: #060606;
+        --text-color: #fff;
+        --navbar: #23232375;
+        --lighter: #414141;
+    }
+
+.main {
+  min-height: 100vh;
+}
+.card {
+  background-color: var(--navbar);
+  background-size: cover;
+  color: var(--text-color);
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+}
+#timebg {
+  color: #fff;
+}
+.logo {
+  border: 1px var(--lighter) solid;
+}
+#status {
+  background-color: rgb(121, 201, 84);
+}
