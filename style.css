@@ -30,12 +30,41 @@ body {
   color: var(--text-color);
   filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
-#timebg {
-  color: #fff;
-}
+#hours, #mins {filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));}
+#timebg {color: #fff;}
 .logo {
   border: 1px var(--lighter) solid;
 }
 #status {
   background-color: rgb(121, 201, 84);
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 15px;
+  width: 70px;
+  margin-left: 5px;
+  background-color: var(--bg);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--bg) transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
