@@ -30,7 +30,6 @@ timebg.style.backgroundImage = 'url("./img/bg/vert.jpg")';
 timebg.style.backgroundImage = 'url("./img/bg/dark.jpg")';
 }
 
-// Set your birthday (month is 0-indexed, so January is 0)
 const birthdayMonth = 0; // January (0 - 11)
 const birthdayDay = 25; // 1st day of the month
 
@@ -45,20 +44,26 @@ function updateDaysRemaining() {
     nextBirthday = new Date(currentYear + 1, birthdayMonth, birthdayDay);
   }
 
+  // Check if today is the birthday
+  if (
+    today.getMonth() === birthdayMonth &&
+    today.getDate() === birthdayDay
+  ) {
+    // It's your birthday!
+    document.getElementById('daysRemaining').textContent = 'Happy Birthday Aldess!';
+    document.getElementById('untilbirthday').style.display = 'none'; // Hide the element
+    return;
+  }
+
+  // Calculate the difference between today and nextBirthday
   const difference = nextBirthday - today;
   const daysRemaining = Math.ceil(difference / (1000 * 60 * 60 * 24));
 
   const daysRemainingElement = document.getElementById('daysRemaining');
   const untilBirthdayElement = document.getElementById('untilbirthday');
 
-  if (daysRemaining === 0) {
-    // It's your birthday!
-    daysRemainingElement.textContent = 'Happy Birthday!';
-    untilBirthdayElement.style.display = 'none'; // Hide the element
-  } else {
-    // Show the days remaining
-    daysRemainingElement.textContent = `${daysRemaining} days`;
-  }
+  // Show the correct days remaining
+  daysRemainingElement.textContent = `${daysRemaining} days`;
 }
 
 // Call the function to display days remaining

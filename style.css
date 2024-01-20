@@ -70,3 +70,9 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+#idk {
+  background-image: url('img/logo.png');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 85%;
+}
