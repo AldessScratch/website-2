@@ -14,7 +14,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head> 
-<body>
+<body style="background-image: url('./img/bg.png')">
+    <div id="tohide" class="hidden flex justify-center items-center w-full fixed h-full bg-black fisrst text-2xl text-white" onclick="hide()">Click anywhere to start</div>
+    <script>
+        function hide(){
+            document.getElementById('tohide').classList.add('hiding')
+            setTimeout(() => {
+            document.getElementById('tohide').style.display = 'none'
+            document.getElementById('audio').play()
+        }, 900);
+        }
+    </script>
+    
     <div class="main backdrop-blur-md w-full flex justify-center items-center flex-col">
         <div class="flex justify-center items-center flex-wrap mt-4 max-[430px]:w-full">
             <div id="idk" class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full">
@@ -26,7 +37,7 @@
                         <i class="bx bxl-discord-alt text-[#5865F2] cursor-pointer" onclick="window.open('https://discord.com/users/1001220536619249665')"></i>
                         <i class="bx bxl-github cursor-pointer" onclick="window.open('https://github.com/AldessScratch')"></i>
                         <i class='bx bx-shield tooltip'><span class="tooltiptext aa">Moderator @Soar Client</span></i>
-                        <i class='bx bx-code' ></i>
+                        <i class='bx bx-code tooltip' ><span class="tooltiptext aa">Former dev @Aetherium Client</span></i>
                         <i class='bx bx-heart text-[#FF7276] tooltip' ><span class="tooltiptext">MD <i class='bx bxs-heart text-[#FF7276]' ></i></span></i>
                     </div>
                 </div>
@@ -49,13 +60,15 @@
                     <div class="my-1 text-[13px]">Hey, it's me Aldess, I'm a french teenager and I love coding and drawing in my free time. I learnt html and css 2 years ago then js gradually and I'm currently learning React and TailwindCSS.</div>
                 </div>
             </div>
-            <div class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full">
+            <div class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full max-[870px]:mb-20">
                 <div class="w-10/12">
                     <div class="font-bold text-2xl my-2 items-center flex"><i class='bx bx-code-alt mr-2'></i> Skillicons</div>
-                    <img src="https://skillicons.dev/icons?i=html,css,js,discord,netlify,github,replit,vscode,cloudflare,tailwind,react&perline=6">
+                    <img src="https://skillicons.dev/icons?i=html,css,js,netlify,github,replit,vscode,cloudflare,tailwind,react&perline=6">
                 </div>
             </div>
         </div>
+        <audio id="audio" src="ripøfdream.mp3"></audio>
+        <div id="musictitle" class="hidden text-white text-1xl absolute left-0 bottom-0 m-4 items-center flex"><i class="bx bx-play mr-1"></i> Now playing -<span class="ml-1 font-semibold"> øfdream  thelema slowed  bass boosted</span></div>
     </div>
     <script>
         AOS.init();

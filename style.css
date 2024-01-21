@@ -8,12 +8,11 @@
     scroll-behavior: smooth;
 }
 body {
-  background-image: url('./img/bg.png');
+  background-color: var(--bg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-
-
     :root {
       --bg: #060606;
         --text-color: #fff;
@@ -75,4 +74,23 @@ body {
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: 85%;
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+.fisrst {
+  z-index: 2;
+}
+.hiding {
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+#musictitle {
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
