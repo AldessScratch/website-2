@@ -14,7 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head> 
-<body style="background-image: url('./img/bg.png')">
+<body class="backdrop-blur-md" style="background-image: url('./img/bg.png')">
     <div id="tohide" class="hidden flex justify-center items-center w-full fixed h-full bg-black fisrst text-2xl text-white" onclick="hide()">Click anywhere to start</div>
     <script>
         function hide(){
@@ -26,9 +26,9 @@
         }
     </script>
     
-    <div class="main backdrop-blur-md w-full flex justify-center items-center flex-col">
+    <div class="main  w-full flex justify-center items-center flex-col">
         <div class="flex justify-center items-center flex-wrap mt-4 max-[430px]:w-full">
-            <div id="idk" class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full">
+            <div data-aos="zoom-in" id="idk" class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full">
                 <div class="w-9/12">
                     <div class="font-bold text-2xl my-1">Aldess</div>
                     <div class="my-1 text-1xl">@aldesssc</div>
@@ -43,24 +43,24 @@
                 </div>
             </div>
             <div class="flex justify-center items-center flex-wrap max-[430px]:w-full">
-                <div id="timebg" class="flex justify-center items-center h-[200px] w-[200px] card m-10 m-2 rounded-xl max-[430px]:w-full">
+                <div data-aos="zoom-in" id="timebg" class="flex justify-center items-center h-[200px] w-[200px] card m-10 m-2 rounded-xl max-[430px]:w-full">
                     <div id="hours" class="text-4xl font-bold mb-4 mr-1"></div>
                     <div id="mins" class="text-4xl font-bold mt-4 ml-1"></div>
                 </div>
-                <div class="flex justify-center items-center flex-col h-[200px] w-[200px] card m-10 m-2 rounded-xl max-[430px]:w-full">
+                <div data-aos="zoom-in" class="flex justify-center items-center flex-col h-[200px] w-[200px] card m-10 m-2 rounded-xl max-[430px]:w-full">
                     <div id="daysRemaining" class="font-bold text-3xl my-3 rotate-[30deg] text-center"></div>
                     <p id="untilbirthday" class="font-thin text-1xl my-3 rotate-[30deg]">until birthday</p>
                 </div>
             </div>
         </div>
         <div class="flex justify-center items-center flex-wrap max-[430px]:w-full">
-            <div class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full">
+            <div data-aos="zoom-in" class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full">
                 <div class="w-10/12">
                     <div class="font-bold text-2xl my-1 items-center flex"><i class="bx bx-info-circle mr-2"></i> About me</div>
                     <div class="my-1 text-[13px]">Hey, it's me Aldess, I'm a french teenager and I love coding and drawing in my free time. I learnt html and css 2 years ago then js gradually and I'm currently learning React and TailwindCSS.</div>
                 </div>
             </div>
-            <div class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full max-[870px]:mb-20">
+            <div data-aos="zoom-in" class="flex justify-center items-center flex-col h-[200px] w-[420px] card m-10 m-2 rounded-xl max-[430px]:w-full max-[870px]:mb-20">
                 <div class="w-10/12">
                     <div class="font-bold text-2xl my-2 items-center flex"><i class='bx bx-code-alt mr-2'></i> Skillicons</div>
                     <img src="https://skillicons.dev/icons?i=html,css,js,netlify,github,replit,vscode,cloudflare,tailwind,react&perline=6">
