@@ -68,3 +68,4 @@ function updateDaysRemaining() {
 
 // Call the function to display days remaining
 updateDaysRemaining();
+
