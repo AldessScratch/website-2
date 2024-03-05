@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AldessSc | Things I made</title>
+  <script src="tailwind.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./img/logo.png">
+  <meta name="description" content="My website :D">
+  <meta property="og:image" content="/img/logo.png">
+  <meta content="#ffffff" data-react-helmet="true" name="theme-color">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css">
+</head> 
+<body class="backdrop-blur-md" style="background-image: url('./img/cybertruck.jpg')">
+    <div class="home">
+        <div class="cards" id="cards">
+          <div class="card" data-aos="zoom-in">
+            <div class="imgcontainer">
+              <img data-original="img/launcher.png" src="img/launcher.png">
+              <img style="display: none;" data-original="img/launcher2.png" src="img/launcher2.png">
+              <img style="display: none;" data-original="img/launcher3.png" src="img/launcher3.png">
+            </div>
+            <div class="cardtext">Aetherium Launcher</div>
+            <div class="carddesc">Frontend for Aetherium Client Launcher. Looks very nice in my opinion</div>
+          </div>
+            <div class="card" data-aos="zoom-in">
+                <div class="imgcontainer">
+                  <img data-original="img/aetherium.png" src="img/aetherium.png">
+                  <img style="display: none;" data-original="img/aetherium2.png" src="img/aetherium2.png">
+                  <img style="display: none;" data-original="img/aetherium3.png" src="img/aetherium3.png">
+                </div>
+                <div class="cardtext">Aetherium Client website <i onclick="window.open('https://aetherium.club/')" class="bx bx-link-external small"></i></div>
+                <div class="carddesc">Cleanest website I've ever made (so far)</div>
+              </div>
+              <div class="card" data-aos="zoom-in">
+                <div class="imgcontainer">
+                  <img data-original="img/snowybg.png" src="img/snowybg.png">
+                </div>
+                <div class="cardtext">Snowybg <i onclick="window.open('https://github.com/AldessScratch/snowy-bg')" class="bx bxl-github"></i></div>
+                <div class="carddesc">Rainmeter style website so we can have a nice background on the classroom's computer. Unfortunately, it didn't last long cuz the math teacher removed it :(</div>
+              </div>
+              <div class="card" data-aos="zoom-in">
+                <div class="imgcontainer">
+                  <img data-original="img/unisteria.png" src="img/unisteria.png">
+                  <img style="display: none;" data-original="img/unisteria2.png" src="img/unisteria2.png">
+                </div>
+                <div class="cardtext">Unisteria website <i onclick="window.open('https://unisteria.netlify.app/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/AldessScratch/Unisteria-Website')" class="bx bxl-github"></i></div>
+                <div class="carddesc">A website I made for a hack client. Looks cool with the boxed background.</div>
+              </div>
+              <div class="card" data-aos="zoom-in">
+                <div class="imgcontainer">
+                  <img data-original="img/soar.png" src="img/soar.png">
+                  <img style="display: none;" data-original="img/soar2.png" src="img/soar2.png">
+                </div>
+                <div class="cardtext">Soar Client website redesign <i onclick="window.open('https://soarclient.netlify.app/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/AldessScratch/Soar-Client-Website')" class="bx bxl-github"></i></div>
+                <div class="carddesc">A redesign of Soar Client cuz the actual one is made on NicePage 💀</div>
+              </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+          var galley = document.getElementById('cards');
+          var viewer = new Viewer(galley, {
+            url: 'data-original',
+            title: function (image) {
+              return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
+            },
+          });
+        });
+        AOS.init();
+      </script>
+</body>
+</html>
