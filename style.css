@@ -50,6 +50,8 @@ body {
 
 }
 .card {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   background-color: var(--navbar);
   background-size: cover;
   color: var(--text-color);
