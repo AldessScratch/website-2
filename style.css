@@ -46,10 +46,11 @@ body {
 }
 .home2 {
   width: 100%;
-  height: 100vh;
-
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-.card {
+.card, .card2 {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   background-color: var(--navbar);
@@ -139,7 +140,7 @@ body {
  .cards {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   margin-top: 50px;
   justify-content: center;
@@ -155,10 +156,24 @@ width: 350px;
 margin: 10px;
 height: 310px;
 background-color: var(--navbar);
+padding-bottom: 10px;
 }
+.cards .card2 {
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  margin: 30px;
+  height: 350px;
+  background-color: var(--navbar);
+  padding-bottom: 10px;
+  }
 .imgcontainer {
   display: flex;
   justify-content: center;
+  align-items: center;
 margin: 10px;
 border-radius: 15px;
 overflow: hidden;
@@ -168,7 +183,7 @@ height: auto;
 .imgcontainer img {
 cursor: pointer;
 width: 100%;
-height: auto;
+height: max-content;
 }
 .imgcontainer.center {
 display: flex;

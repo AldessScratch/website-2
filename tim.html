@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AldessSc | Things I made</title>
-  <script src="tailwind.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="./img/logo.png">
   <meta name="description" content="My website :D">
@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css">
 </head> 
-<body style="background-image: url('./img/cybertruck-modified.jpg')">
+<body style="background-image: url('./img/background.png')">
   <style>
     body {
       height: unset;
@@ -26,14 +26,26 @@
     <div class="home2"  >
 
         <div class="cards" id="cards">
-          <div class="card" data-aos="zoom-in">
+          <div class="card2">
+            <div class="imgcontainer">
+              <img data-original="img/banner.png" src="img/banner.png">
+              <img style="display: none;" data-original="img/2.webp" src="img/2.webp">
+              <img style="display: none;" data-original="img/mainmenu.png" src="img/mainmenu.png">
+            </div>
+            <div class="cardtext">HISB - How It Should Be
+              <i onclick="window.open('https://modrinth.com/modpack/how-it-should-be')" class="bx bx-link-external small"></i>
+              <i class='bx bxl-youtube' onclick="window.open('https://www.youtube.com/@how-it-should-be')"></i>
+              <i class='bx bxl-discord' onclick="window.open('https://discord.gg/4e68VeA6dK')"></i></div>
+            <div class="carddesc">HISB is a modpack that I made with a friend. It makes Minecraft look like as in the Trailer and improves small things to make the game less boring.</div>
+          </div>
+          <div class="card">
             <div class="imgcontainer">
               <img data-original="img/comet.png" src="img/comet.png">
             </div>
             <div class="cardtext">Comet Client Website <i onclick="window.open('https://cometclient.dev/')" class="bx bx-link-external small"></i></div>
             <div class="carddesc">Cleanest Website I've ever made (so far)</div>
           </div>
-          <div class="card" data-aos="zoom-in">
+          <div class="card">
             <div class="imgcontainer">
               <img data-original="img/launcher.png" src="img/launcher.png">
               <img style="display: none;" data-original="img/launcher2.png" src="img/launcher2.png">
@@ -42,7 +54,7 @@
             <div class="cardtext">Aetherium Launcher</div>
             <div class="carddesc">Frontend for Aetherium Client Launcher.</div>
           </div>
-            <div class="card" data-aos="zoom-in">
+            <div class="card">
                 <div class="imgcontainer">
                   <img data-original="img/aetherium.png" src="img/aetherium.png">
                   <img style="display: none;" data-original="img/aetherium2.png" src="img/aetherium2.png">
@@ -51,14 +63,14 @@
                 <div class="cardtext">Aetherium Client Website <i onclick="window.open('https://aetherium.club/')" class="bx bx-link-external small"></i></div>
                 <div class="carddesc">Used to be the cleanest website I've ever made</div>
               </div>
-              <div class="card" data-aos="zoom-in">
+              <div class="card">
                 <div class="imgcontainer">
                   <img data-original="img/snowybg.png" src="img/snowybg.png">
                 </div>
                 <div class="cardtext">Snowybg <i onclick="window.open('https://github.com/AldessScratch/snowy-bg')" class="bx bxl-github"></i></div>
                 <div class="carddesc">Rainmeter style website so we can have a nice background on the classroom's computer.</div>
               </div>
-              <div class="card" data-aos="zoom-in">
+              <div class="card">
                 <div class="imgcontainer">
                   <img data-original="img/unisteria.png" src="img/unisteria.png">
                   <img style="display: none;" data-original="img/unisteria2.png" src="img/unisteria2.png">
@@ -66,7 +78,7 @@
                 <div class="cardtext">Unisteria Client Website <i onclick="window.open('https://unisteria.netlify.app/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/AldessScratch/Unisteria-Website')" class="bx bxl-github"></i></div>
                 <div class="carddesc">A website I made for a hack client.</div>
               </div>
-              <div class="card" data-aos="zoom-in">
+              <div class="card">
                 <div class="imgcontainer">
                   <img data-original="img/soar.png" src="img/soar.png">
                   <img style="display: none;" data-original="img/soar2.png" src="img/soar2.png">
