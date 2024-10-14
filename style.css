@@ -201,3 +201,15 @@ margin: 5px 20px;
   font-size: 14px;
   margin: 5px 20px;
   }
+.homeback {
+  position: fixed;
+  z-index: 10;
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  background-color: var(--navbar);
+  background-size: cover;
+  color: var(--text-color);
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+}
